@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Kotlin Weather</string>
+
+    <!-- action menu -->
+    <string name="action_settings">Settings</string>
+    <string name="action_my_location">My location</string>
+    <string name="refresh">Refresh</string>
+    <string name="find">Find</string>
+
+    <!-- open weather api key -->
+    <string name="api_key">46135f58888b9aea7eb7a98a39e85c6e</string>
+
+    <!-- dialog fragment -->
+    <string name="find_location">Find location</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="city">City</string>
+    <string name="downloading_data">Downloading data</string>
+
+
+    <!--searchView strings -->
+    <string name="searchView_title">Search</string>
+    <string name="last_update">Last update was:</string>
+
+    <!-- weather string description -->
+    <string name="minimal_temp_desc">Minimal temperature</string>
+    <string name="maximal_temp_desc">Maximal temperature</string>
+    <string name="wind_speed_desc">Wind speed</string>
+    <string name="pressure_desc">Pressure</string>
+    <string name="humidity">Humidity</string>
+
+    <!-- errors -->
+    <string name="error_network">Internet connection is not available, forecast could not be
+        actual
+    </string>
+    <string name="error">Something went wrong</string>
+
+    <!-- activity -->
+    <string name="title_activity_settings">Settings</string>
+
+</resources>

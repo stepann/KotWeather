@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kotlin Weather</string>
+    <string name="action_my_location">Moje poloha</string>
+    <string name="OK">OK</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="cancel">Zrušit</string>
+    <string name="city">Město</string>
+    <string name="find">Najít</string>
+    <string name="find_location">Hledat polohu</string>
+    <string name="humidity">Vlhkost</string>
+    <string name="last_update">Poslední aktualizace: </string>
+    <string name="maximal_temp_desc">Maximální teplota</string>
+    <string name="minimal_temp_desc">Minimální teplota</string>
+    <string name="pressure_desc">Tlak</string>
+    <string name="refresh">Obnovit</string>
+    <string name="searchView_title">Hledat</string>
+    <string name="wind_speed_desc">Rychlost větru</string>
+
+    <string name="error_network">Připojení k internetu není k dispozici, data nemusí být aktuální</string>
+    <string name="error">Chyba</string>
+
+
+    <!-- activity label -->
+    <string name="title_activity_settings">Nastavení</string>
+
+</resources>

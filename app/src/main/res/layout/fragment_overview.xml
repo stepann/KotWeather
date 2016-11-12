@@ -1,0 +1,304 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="532dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!-- start minimal temperature -->
+                        <TextView
+                            android:id="@+id/tvMinimalTempDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/minimal_temp_desc"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivTodayTempMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                app:srcCompat="@drawable/ic_thermometer"/>
+
+                            <TextView
+                                android:id="@+id/todayTempMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+
+                            <TextView
+                                android:id="@+id/todayTempMinUnit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="°C"
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/darker_gray"/>
+                        <!-- end minimal temperature -->
+
+                        <!-- start minimal temperature -->
+                        <TextView
+                            android:id="@+id/tvMaximumTempDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/maximal_temp_desc"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivTodayTempMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                app:srcCompat="@drawable/ic_thermometer_lines"/>
+
+                            <TextView
+                                android:id="@+id/todayTempMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+
+                            <TextView
+                                android:id="@+id/todayTempMaxUnit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="°C"
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/darker_gray"/>
+                        <!-- end minimal temperature -->
+
+                        <!-- start wind speed -->
+                        <TextView
+                            android:id="@+id/tvTodayWindDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/wind_speed_desc"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivTodayWind"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                app:srcCompat="@drawable/ic_weather_windy"/>
+
+                            <TextView
+                                android:id="@+id/tvTodayWind"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+
+                            <TextView
+                                android:id="@+id/tvTodayWindUnit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="m/s"
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/darker_gray"/>
+                        <!-- end wind speed -->
+
+                        <!-- start pressure speed -->
+                        <TextView
+                            android:id="@+id/tvTodayPressureDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/pressure_desc"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivTodayPressure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:src="@drawable/ic_thermometer"/>
+
+                            <TextView
+                                android:id="@+id/tvTodayPressure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+
+                            <TextView
+                                android:id="@+id/tvTodayPressureUnit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="hpa"
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/darker_gray"/>
+                        <!-- end pressure speed -->
+
+                        <!-- start chance of rain -->
+                        <TextView
+                            android:id="@+id/tvTodayHumidityDesc"
+                            android:layout_width="338dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/humidity"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivHumidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:src="@drawable/ic_water"/>
+
+                            <TextView
+                                android:id="@+id/tvTodayHumidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+
+                            <TextView
+                                android:id="@+id/tvTodayHumidityUnit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="%"
+                                android:textColor="@android:color/black"
+                                android:textSize="27sp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/darker_gray"/>
+                        <!-- end chance of rain -->
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_search_white_24dp"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</ScrollView>
+
+
+
